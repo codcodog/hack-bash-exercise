@@ -1,0 +1,5 @@
+#!/bin/env bash
+
+# 输出 "HELLO"
+
+echo 'HELLO'

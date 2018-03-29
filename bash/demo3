@@ -1,0 +1,6 @@
+#!/bin/env bash
+
+# 输入 name，输出："Welcome (name)"
+
+read name
+echo "Welcome $name"
