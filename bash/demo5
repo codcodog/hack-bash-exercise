@@ -1,0 +1,18 @@
+#!/bin/env bash
+
+# 从用户中读取一个字符，可能是：y, Y, n, N
+# 如果是 y, Y 则输出 YES
+# 如果是 n, N 则输出 NO
+
+read char
+
+case "$char" in
+    'y'|'Y')
+        echo 'YES'
+        ;;
+    'n'|'N') 
+        echo 'NO'
+        ;;
+    *)
+        echo 'Only y, Y, n, N characters are valid.'
+esac

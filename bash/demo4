@@ -1,0 +1,17 @@
+#!/bin/env bash
+
+# 输入两个数字 x, y
+# 比较两个大小，输出连个比较结果
+
+read x
+read y
+
+if [ $x -gt $y ];
+then
+    echo 'X is greater than Y'
+elif [ $x -eq $y ];
+then
+    echo 'X is equal to Y'
+else
+    echo 'X is less than Y'
+fi
