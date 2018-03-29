@@ -1,0 +1,16 @@
+#!/bin/env bash
+
+# 输入一个表达式计算，其中每个数字都不能超过999
+# 保持输出结果保留三位小数点
+
+read expression
+
+# 判断表达式中每个数字不超过999
+while IFS= read -r num; do
+    if [ $(echo "$num>999" | bc -l) -eq 1 ];then
+        echo "$num 大于 999，不符合要求：每个数字的值都不能大于999"
+        exit 1
+    fi
+done < <(grep -o '[0-9]*\.\?[0-9]*' <(echo "$expression"))
+
+echo $(echo "scale=3; $expression" | bc -l)
