@@ -14,7 +14,8 @@ for ((i=0; i<num; i++)); do
     read num$i
 
     tmp=num$i
-    eval var=\$$tmp
+#eval var=\$$tmp
+    var=${!tmp}
     if [ $var -lt -10000 -o $var -gt 10000 ]; then
         echo 'x should be -10000<=x<=10000'
     fi
@@ -24,7 +25,8 @@ unset var
 total=0
 for ((i=0; i<num; i++)); do
     tmp=num$i
-    eval var=\$$tmp
+#eval var=\$$tmp
+    var=${!tmp}
     let total+=var
 done
 echo "scale=3; $total/$num" | bc -l
