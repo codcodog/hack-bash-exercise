@@ -1,0 +1,8 @@
+#!/bin/sh 
+
+# 输出第十三个字符到结尾
+
+while IFS= read line
+do
+    echo "$line" | cut -c13-
+done
