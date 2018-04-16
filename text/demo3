@@ -1,0 +1,8 @@
+#!/bin/sh 
+
+# 输出每行从第二个字符到第七个字符
+
+while IFS= read line
+do
+    echo "$line" | cut -c2-7
+done
