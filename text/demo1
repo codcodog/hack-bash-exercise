@@ -1,0 +1,8 @@
+#!/bin/sh 
+
+# 输出每行的第三个字符
+
+while IFS= read line
+do
+    echo "$line" | cut -c3
+done
