@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# 一个 tab 分割的 tsv 文件，输出从第二个字段到结尾
+
+while IFS= read line
+do
+    echo "$line" | cut -f2-
+done
