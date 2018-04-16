@@ -1,0 +1,8 @@
+#!/bin/sh 
+
+# 输出每行从开头到第四个字符
+
+while IFS= read line
+do
+    echo "$line" | cut -c-4
+done
