@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# 输出一个段落，由一个空格分割的第一到第三个字段
+
+while IFS= read line
+do
+    echo "$line" | cut -d' ' -f1-3
+done
