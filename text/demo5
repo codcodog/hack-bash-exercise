@@ -1,0 +1,8 @@
+#!/bin/sh 
+
+# 输出 tab 分割的前三个字段
+
+while IFS= read line
+do
+    echo "$line" | cut -f-3
+done
