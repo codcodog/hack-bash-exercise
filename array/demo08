@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# 输入N个数，存入数组，然后找出只出现一次的数字（不重复）
+
+tmp=($(cat))
+unset tmp[0]
+echo ${tmp[@]} | tr ' ' $'\n' | sort -n | uniq -u
