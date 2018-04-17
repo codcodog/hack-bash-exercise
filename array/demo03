@@ -1,0 +1,12 @@
+#!/bin/sh 
+
+# 读入数组并正则去除一些元素
+
+declare -a tmp
+
+while IFS= read country
+do
+    tmp=("${tmp[@]}" "$country")
+done
+
+echo ${tmp[@]/*[a|A]*/}
