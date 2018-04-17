@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# 转换换行符为tab
+
+paste -sd$'\t'
