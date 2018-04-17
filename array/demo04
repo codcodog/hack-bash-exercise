@@ -1,0 +1,10 @@
+#!/bin/sh 
+
+# 读入数组并复制两次自身
+
+declare -a tmp
+
+tmp=($(cat))
+
+tmp1=("${tmp[@]}" "${tmp[@]}" "${tmp[@]}")
+echo "${tmp1[@]}"
