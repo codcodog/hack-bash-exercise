@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# 查找含有 the 单词的行
+
+grep -w 'the' -
