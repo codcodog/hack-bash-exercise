@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# the, that, then, those 含有的单词现实，忽略大小写
+
+grep -iw 'the\|that\|then\|those'
