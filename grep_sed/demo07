@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# 替换 thy 为 your，忽略大小写
+
+sed -e 's/\<thy\>/your/ig'
