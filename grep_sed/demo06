@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# 替换 the 为 this
+
+sed -e 's/\<the\>/this/'
