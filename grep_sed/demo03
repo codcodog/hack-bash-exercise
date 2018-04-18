@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# 显示没有包含 that 单词，忽略大小写
+
+grep -vi that -
